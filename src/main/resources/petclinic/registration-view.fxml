@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" prefHeight="600" prefWidth="800" spacing="10" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="petclinic.controller.RegistrationController">
+    <padding>
+        <Insets bottom="20" left="20" right="20" top="20" />
+    </padding>
+
+    <Label text="Регистрация">
+        <font>
+            <Font size="25.0" />
+        </font>
+        <VBox.margin>
+            <Insets bottom="15.0" />
+        </VBox.margin>
+    </Label>
+    <TextField fx:id="nameField" alignment="CENTER" focusTraversable="false" maxWidth="-Infinity" prefHeight="30.0" prefWidth="200.0" promptText="Имя">
+        <font>
+            <Font size="15.0" />
+        </font>
+   </TextField>
+   <HBox alignment="CENTER">
+      <children>
+          <TextField fx:id="addressField" alignment="CENTER" focusTraversable="false" maxWidth="-Infinity" prefHeight="30.0" prefWidth="200.0" promptText="Адрес">
+              <font>
+                  <Font size="15.0" />
+              </font>
+            <HBox.margin>
+               <Insets right="50.0" />
+            </HBox.margin>
+         </TextField>
+          <TextField fx:id="phoneField" alignment="CENTER" focusTraversable="false" maxWidth="-Infinity" prefHeight="30.0" prefWidth="200.0" promptText="Телефон">
+              <font>
+                  <Font size="15.0" />
+              </font>
+         </TextField>
+      </children>
+   </HBox>
+   <HBox alignment="CENTER">
+      <children>
+          <TextField fx:id="loginField" alignment="CENTER" focusTraversable="false" maxWidth="-Infinity" prefHeight="30.0" prefWidth="200.0" promptText="Логин">
+              <font>
+                  <Font size="15.0" />
+              </font>
+            <HBox.margin>
+               <Insets right="50.0" />
+            </HBox.margin>
+         </TextField>
+          <PasswordField fx:id="passwordField" alignment="CENTER" focusTraversable="false" maxWidth="-Infinity" prefHeight="30.0" prefWidth="200.0" promptText="Пароль"/>
+      </children>
+      <VBox.margin>
+         <Insets bottom="5.0" />
+      </VBox.margin>
+   </HBox>
+    <Button mnemonicParsing="false" onAction="#registerAction" prefHeight="50.0" prefWidth="200.0" text="Регистрация">
+        <font>
+            <Font size="25.0" />
+        </font>
+    </Button>
+    <Button mnemonicParsing="false" onAction="#backToLoginAction" prefHeight="50.0" prefWidth="200.0" text="Назад">
+        <font>
+            <Font size="24.0" />
+        </font>
+    </Button>
+</VBox>

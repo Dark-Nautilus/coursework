@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" prefHeight="600" prefWidth="800" spacing="10" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="petclinic.controller.AuthController">
+   <padding>
+      <Insets bottom="20" left="20" right="20" top="20" />
+   </padding>
+
+   <Label text="Вход">
+      <font>
+         <Font size="25.0" />
+      </font>
+      <VBox.margin>
+         <Insets bottom="15.0" />
+      </VBox.margin>
+   </Label>
+   <TextField fx:id="loginField" focusTraversable="false" maxWidth="-Infinity" prefHeight="30.0" prefWidth="200.0" promptText="Логин">
+      <font>
+         <Font size="15.0" />
+      </font></TextField>
+   <PasswordField fx:id="passwordField" focusTraversable="false" maxWidth="-Infinity" prefHeight="30.0" prefWidth="200.0" promptText="Пароль">
+      <font>
+         <Font size="15.0" />
+      </font>
+      <VBox.margin>
+         <Insets bottom="-6.0" />
+      </VBox.margin>
+   </PasswordField>
+   <Label fx:id="incorrectInputLabel" text="Неправильный логин или пароль" visible="false">
+      <VBox.margin>
+         <Insets bottom="-5.0" />
+      </VBox.margin></Label>
+   <Button mnemonicParsing="false" onAction="#loginAction" prefHeight="50.0" prefWidth="200.0" text="Логин">
+      <font>
+         <Font size="25.0" />
+      </font></Button>
+   <Label text="or">
+      <font>
+         <Font size="15.0" />
+      </font>
+   </Label>
+   <Button mnemonicParsing="false" onAction="#registerAction" prefHeight="50.0" prefWidth="200.0" text="Регистрация">
+      <font>
+         <Font size="25.0" />
+      </font>
+   </Button>
+</VBox>
